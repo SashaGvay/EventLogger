@@ -49,7 +49,7 @@ func New(ctx context.Context, cfg *config.Conf) (*Root, error) {
 		return nil, fmt.Errorf("r.initEntities: %w", err)
 	}
 
-	//r.initProducer(ctx)
+	r.initProducer(ctx)
 	r.initConsumer(ctx)
 
 	return r, nil
